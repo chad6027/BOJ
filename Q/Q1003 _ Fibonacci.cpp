@@ -4,7 +4,7 @@
 // 점화식을 통해 빠르게 계산
 // 문제를 잘못 읽어 39번째까지만 구하게 했다가 오답처리를 몇번 당한지 모르겠다.
 // 똑바로 문제를 잘읽어야할 듯.
-
+ 
 #include <iostream>
 using namespace std;
 int fibo[41];
