@@ -1,3 +1,11 @@
+// Q1005 ACM craft
+
+// 위상 정렬을 이용해 풀이하였다. DP만으로 도전하다가 막히는 부분이 있어 위상 정렬로 방향을 틀었다. ( 위상 정렬 방법을 까먹어 검색해본건 함정이다.)
+// 위상 정렬을 통해 DP로 풀이한다.
+// x번 건물이 y번 건물의 선행조건이면, 
+// (x번 건물을 짓는 데까지 걸린 시간(time[x]) + x번 건물을 짓는 데 걸리는 시간(minTime[x])) 과 (y번 건물을 지을 수 있게 된 시간 중 최솟값(minTime[y])) 중 작은 값을 minTime[y]에 저장
+// 위 방식으로 정렬 후, 내가 짓고자 한 건물의 번호를 w라 하면, w를 짓는 데 걸리는 시간(time[w]) + w를 지을 수 있게 된 시간 중 최솟값(minTime[w]) 이 정답이 된다.
+
 #include <iostream>
 #include <vector>
 #include <string.h>
@@ -52,8 +60,8 @@ int main() {
 				if (--degree[v[cur][i]] == 0)
 					q.push(v[cur][i]);
 			}
-			
 		}
+
 		ans = time[W] + minTime[W];
 		cout << ans << '\n';
 
