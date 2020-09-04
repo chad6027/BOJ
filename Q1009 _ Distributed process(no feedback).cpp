@@ -1,3 +1,6 @@
+// Q1009 분산처리
+
+// 한자리 숫자들만 신경써주면 된다. 수학적으로 더 쉽게 접근하는 방법도 있지만.. 문제 푸는 당시에 신경못써서 그냥 때려박았다..
 #include <iostream>
 #include <vector>
 using namespace std;
