@@ -1,3 +1,6 @@
+// 귀신 구멍에 관한 간선을 만들 때 잘못된 프로세스를 생각하여
+// 알아채는데 4시간이 걸렸다.. 다음부터 같은
+
 #include <bits/stdc++.h>
 
 using namespace std;
