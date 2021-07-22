@@ -16,7 +16,6 @@ bool checkChar(char ch) {
     return false;
 
 }
-
 string solution(string new_id) {
     string answer = "";
     string& str = new_id;
